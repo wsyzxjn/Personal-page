@@ -66,7 +66,7 @@ if ($ === undefined) {
 		success: (res) => {
 			document.querySelector('footer#footer').innerHTML = res
 			// Get secret
-			eval($.ajax({url:"./run.js", async:false}).responseText)
+			
 		},
 		error: (xhr, status, error) => {
 			console.log('Footer请求失败，错误原因：\n',error)
